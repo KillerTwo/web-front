@@ -77,6 +77,7 @@ export default class GlobalHeaderRight extends PureComponent {
     }
     return (
       <div className={className}>
+        {/* 搜索
         <HeaderSearch
           className={`${styles.action} ${styles.search}`}
           placeholder={formatMessage({ id: 'component.globalHeader.search' })}
@@ -91,7 +92,8 @@ export default class GlobalHeaderRight extends PureComponent {
           onPressEnter={value => {
             console.log('enter', value); // eslint-disable-line
           }}
-        />
+        /> */}
+        {/* 问号提示
         <Tooltip title={formatMessage({ id: 'component.globalHeader.help' })}>
           <a
             target="_blank"
@@ -101,7 +103,8 @@ export default class GlobalHeaderRight extends PureComponent {
           >
             <Icon type="question-circle-o" />
           </a>
-        </Tooltip>
+        </Tooltip> */}
+        {/* 待办事项通知 */}
         <NoticeIcon
           className={styles.action}
           count={currentUser.notifyCount}
@@ -155,7 +158,8 @@ export default class GlobalHeaderRight extends PureComponent {
         ) : (
           <Spin size="small" style={{ marginLeft: 8, marginRight: 8 }} />
         )}
-        <SelectLang className={styles.action} />
+        {/* 语言选择
+        <SelectLang className={styles.action} /> */}
       </div>
     );
   }

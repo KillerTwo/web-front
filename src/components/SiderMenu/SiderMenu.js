@@ -107,10 +107,11 @@ export default class SiderMenu extends PureComponent {
         theme={theme}
         className={siderClassName}
       >
+        {/* 左侧导航栏图标部分内容 */}
         <div className={styles.logo} id="logo">
           <Link to="/">
             <img src={logo} alt="logo" />
-            <h1>Ant Design Pro</h1>
+            <h1 style={{ color: '#fff' }}>Ant Design Pro</h1>
           </Link>
         </div>
         <BaseMenu
