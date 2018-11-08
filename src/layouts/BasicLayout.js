@@ -170,12 +170,12 @@ class BasicLayout extends React.PureComponent {
       });
     };
     // 使用远程菜单后，更改面包屑显示
-    const {
-      menu: { menus: menuData },
-    } = this.props;
+    // const {
+    //   menu: { menus: menuData },
+    // } = this.props;
     // console.log(this.props);
-    // mergeMenuAndRouter(this.getMenuData());
-    mergeMenuAndRouter(menuData);
+    mergeMenuAndRouter(this.getMenuData());
+    // mergeMenuAndRouter(menuData);
     // console.log("面包屑： ",routerMap);
     return routerMap;
   }
