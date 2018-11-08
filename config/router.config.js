@@ -21,39 +21,40 @@ export default [
     authority: ['admin', 'user'],
     routes: [
       // dashboard
-      { path: '/', redirect: '/dashboard/analysis' },
-      {
-        path: '/dashboard',
-        name: 'dashboard',
-        icon: 'dashboard',
-        routes: [
-          {
-            path: '/dashboard/analysis',
-            name: 'analysis',
-            component: './Dashboard/Analysis',
-          },
-          {
-            path: '/dashboard/monitor',
-            name: 'monitor',
-            component: './Dashboard/Monitor',
-          },
-          {
-            path: '/dashboard/workplace',
-            name: 'workplace',
-            component: './Dashboard/Workplace',
-          },
-        ],
-      },
+      // { path: '/', redirect: '/dashboard/analysis' },
+      { path: '/', redirect: '/form/basic-form' },
+      // {
+      //   path: '/dashboard',
+      //   name: 'dashboard',
+      //   icon: 'dashboard',
+      //   routes: [
+      //     {
+      //       path: '/dashboard/analysis',
+      //       name: 'analysis',
+      //       component: './Dashboard/Analysis',
+      //     },
+      //     {
+      //       path: '/dashboard/monitor',
+      //       name: 'monitor',
+      //       component: './Dashboard/Monitor',
+      //     },
+      //     {
+      //       path: '/dashboard/workplace',
+      //       name: 'workplace',
+      //       component: './Dashboard/Workplace',
+      //     },
+      //   ],
+      // },
       // forms
       {
         path: '/form',
         icon: 'form',
-        // name: 'form',
+        name: 'form',
         routes: [
           {
             path: '/form/basic-form',
             name: 'basicform',
-            // component: './Forms/BasicForm',
+            component: './Forms/BasicForm',
           },
           {
             path: '/form/step-form',
